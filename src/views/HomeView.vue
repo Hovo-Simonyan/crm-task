@@ -5,14 +5,7 @@
   
 
     <div class="content">
-      <div class="content-header">
-        <div>
-          <h1>Активные консультации</h1>
-        </div>
-        <div>
-          <img src="../assets/avatar.png" />
-        </div>
-      </div>
+      <Header title="Активные консультации" />
 
       <div class="bages">
         <div class="bage-item">
@@ -172,6 +165,7 @@
 
 <script setup>
 import Sidebar from '@/components/Sidebar.vue';
+import Header from '@/components/Header.vue';
 
 </script>
 
@@ -248,9 +242,25 @@ import Sidebar from '@/components/Sidebar.vue';
   text-align: start;
 }
 
+
+
+@media only screen and (max-width: 1920px) {
+  .bages {
+    grid-template-columns: auto auto;
+    grid-template-rows: 230px 230px 230px;
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  .bages {
+    grid-template-columns: auto auto;
+  }
+}
 @media only screen and (max-width: 1150px) {
   .bages {
-    grid-template-columns: 400px;
+    grid-template-columns: auto;
+    grid-template-rows: 200px 200px 200px;
+
     justify-content: center;
   }
 }
