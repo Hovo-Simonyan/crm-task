@@ -1,18 +1,257 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="container">
+   <Sidebar />
+
+  
+
+    <div class="content">
+      <div class="content-header">
+        <div>
+          <h1>Активные консультации</h1>
+        </div>
+        <div>
+          <img src="../assets/avatar.png" />
+        </div>
+      </div>
+
+      <div class="bages">
+        <div class="bage-item">
+          <div align="start">
+            <h2>Николай Пономарев</h2>
+            <h4>Контактыне данные</h4>
+          </div>
+
+          <div class="bage-info">
+            <div class="bage-phone">
+              <div>
+                <img src="../assets/phone.png" alt="" srcset="" />
+                + 934872347687
+              </div>
+              <div>
+                <img src="../assets/email.png" alt="" srcset="" />
+
+                hovo.simonyan.2000@mail.ru
+              </div>
+            </div>
+
+            <div class="bage-photo-name">
+              <div>
+                <img src="../assets/elips.png" class="bage-img" />
+              </div>
+              <div align="start">
+                <p>Иван Иванов</p>
+                <p>Младший инженер</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bage-item">
+          <div align="start">
+            <h2>Николай Пономарев</h2>
+            <h4>Контактыне данные</h4>
+          </div>
+
+          <div class="bage-info">
+            <div class="bage-phone">
+              <div>
+                <img src="../assets/phone.png" alt="" srcset="" />
+                + 934872347687
+              </div>
+              <div>
+                <img src="../assets/email.png" alt="" srcset="" />
+
+                hovo.simonyan.2000@mail.ru
+              </div>
+            </div>
+
+            <div class="bage-photo-name">
+              <div>
+                <img src="../assets/elips.png" class="bage-img" />
+              </div>
+              <div align="start">
+                <p>Иван Иванов</p>
+                <p>Младший инженер</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bage-item">
+          <div align="start">
+            <h2>Николай Пономарев</h2>
+            <h4>Контактыне данные</h4>
+          </div>
+
+          <div class="bage-info">
+            <div class="bage-phone">
+              <div>
+                <img src="../assets/phone.png" alt="" srcset="" />
+                + 934872347687
+              </div>
+              <div>
+                <img src="../assets/email.png" alt="" srcset="" />
+
+                hovo.simonyan.2000@mail.ru
+              </div>
+            </div>
+
+            <div class="bage-photo-name">
+              <div>
+                <img src="../assets/elips.png" class="bage-img" />
+              </div>
+              <div align="start">
+                <p>Иван Иванов</p>
+                <p>Младший инженер</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bage-item">
+          <div align="start">
+            <h2>Николай Пономарев</h2>
+            <h4>Контактыне данные</h4>
+          </div>
+
+          <div class="bage-info">
+            <div class="bage-phone">
+              <div>
+                <img src="../assets/phone.png" alt="" srcset="" />
+                + 934872347687
+              </div>
+              <div>
+                <img src="../assets/email.png" alt="" srcset="" />
+
+                hovo.simonyan.2000@mail.ru
+              </div>
+            </div>
+
+            <div class="bage-photo-name">
+              <div>
+                <img src="../assets/elips.png" class="bage-img" />
+              </div>
+              <div align="start">
+                <p>Иван Иванов</p>
+                <p>Младший инженер</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bage-item">
+          <div align="start">
+            <h2>Николай Пономарев</h2>
+            <h4>Контактыне данные</h4>
+          </div>
+
+          <div class="bage-info">
+            <div class="bage-phone">
+              <div>
+                <img src="../assets/phone.png" alt="" srcset="" />
+                + 934872347687
+              </div>
+              <div>
+                <img src="../assets/email.png" alt="" srcset="" />
+
+                hovo.simonyan.2000@mail.ru
+              </div>
+            </div>
+
+            <div class="bage-photo-name">
+              <div>
+                <img src="../assets/elips.png" class="bage-img" />
+              </div>
+              <div align="start">
+                <p>Иван Иванов</p>
+                <p>Младший инженер</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
-<script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+<script setup>
+import Sidebar from '@/components/Sidebar.vue';
 
-export default {
-  name: 'HomeView',
-  components: {
-    HelloWorld
+</script>
+
+<style scoped>
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&display=swap");
+.container {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  grid-template-rows: 100vh;
+}
+
+
+.content {
+  background-color: #ebebeb;
+  padding: 30px 65px 0px 65px;
+}
+
+
+
+/* ------------ Content ------------ */
+.content-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.content-header h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 35px;
+  font-weight: 800;
+  line-height: 43px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.bages {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 200px 200px 200px;
+  gap: 9px;
+}
+
+.bage-item {
+  background: #fcfcfc;
+
+  box-shadow: 0px 8px 24px rgba(129, 135, 189, 0.15);
+  border-radius: 8px;
+
+  padding: 30px;
+}
+
+.bage-item > div > h2 {
+  margin-bottom: 25px;
+}
+
+.bage-info {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  height: 80px;
+}
+
+.bage-photo-name {
+  display: flex;
+  align-items: center;
+}
+
+.bage-img {
+  margin-right: 20px;
+}
+
+.bage-phone {
+  text-align: start;
+}
+
+@media only screen and (max-width: 1150px) {
+  .bages {
+    grid-template-columns: 400px;
+    justify-content: center;
   }
 }
-</script>
+</style>
