@@ -1,13 +1,9 @@
 <template>
-  <!-- <router-view/> -->
-  <!-- <Employee /> -->
-  <PersonalArea />
+  <router-view/>
+
 </template>
 
 <script setup>
-import Employee from './views/Employee.vue'
-import PersonalArea from './views/PersonalArea.vue'
-
 </script>
 
 <style>

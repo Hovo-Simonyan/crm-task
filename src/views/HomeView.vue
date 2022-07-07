@@ -180,7 +180,7 @@ import Header from '@/components/Header.vue';
 
 .content {
   background-color: #ebebeb;
-  padding: 30px 65px 0px 65px;
+  padding: 30px 65px 0px 35px;
 }
 
 
@@ -245,23 +245,23 @@ import Header from '@/components/Header.vue';
 
 
 @media only screen and (max-width: 1920px) {
-  .bages {
+  /* .bages {
     grid-template-columns: auto auto;
     grid-template-rows: 230px 230px 230px;
-  }
+  } */
 }
 
 @media only screen and (max-width: 1600px) {
-  .bages {
+  /* .bages {
     grid-template-columns: auto auto;
-  }
+  } */
 }
 @media only screen and (max-width: 1150px) {
-  .bages {
+  /* .bages {
     grid-template-columns: auto;
     grid-template-rows: 200px 200px 200px;
 
     justify-content: center;
-  }
+  } */
 }
 </style>
