@@ -6,12 +6,7 @@
       <div class="main-content">
         <div class="header">
           <div class="header-name">Личный кабинет</div>
-          <div class="header-settings">
-            <div class="add-agent">
-              <span>Добавить агента</span>
-            </div>
-            <img src="../assets/agent-settings.png" alt="" />
-          </div>
+          <div><img src="../assets/agent-settings.png" alt="" /></div>
         </div>
         <div class="info">
           <div class="agent-info">
@@ -55,14 +50,6 @@
             <p>Новые клиенты</p>
             <span>274</span>
           </div>
-          <div class="item5">
-            <p>Новые клиенты</p>
-            <span>274</span>
-          </div>
-          <div class="item6">
-            <p>Новые клиенты</p>
-            <span>274</span>
-          </div>
         </div>
       </div>
     </div>
@@ -87,7 +74,7 @@ import Sidebar from "../components/Sidebar.vue";
   background-color: #ebebeb;
   padding: 30px 45px 30px 45px;
   display: flex;
-  align-items: center;
+  align-items: center
 }
 
 .main-content {
@@ -132,36 +119,7 @@ import Sidebar from "../components/Sidebar.vue";
   align-items: center;
   padding-left: 30px;
 }
-.header-settings {
-  display: flex;
-  align-items: center;
-}
-.header-settings img {
-  cursor: pointer;
-}
-.add-agent {
-  background-color: #f50057;
-  width: 214px;
-  height: 29px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: 50px;
-  border-radius: 8px;
-  cursor: pointer;
 
-  filter: drop-shadow(2px 3px 11px rgba(245, 0, 87, 0.24));
-}
-
-.add-agent span {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 13px;
-  line-height: 13px;
-
-  color: #ffffff;
-}
 .info-name p {
   font-family: "Montserrat";
   font-style: normal;
@@ -227,45 +185,43 @@ import Sidebar from "../components/Sidebar.vue";
 .item1,
 .item2,
 .item3,
-.item4,
-.item5,
-.item6 {
+.item4 {
   text-align: start;
   padding-left: 20px;
   padding-top: 20px;
 }
 
 .item1 > p,
-.item2 > p,
+.item2 >p,
 .item3 > p,
-.item4 > p,
-.item5 > p,
-.item6 > p {
-  font-family: "Montserrat";
+.item4 > p {
+
+
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
 
-  color: #3b3a68;
+  color: #3B3A68;
 }
 
-.item1 span,
-.item2 span,
-.item3 span,
-.item4 span,
-.item5 span,
-.item6 span {
+.item1,
+.item2,
+.item3,
+.item4 span {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 35px;
   line-height: 43px;
 
   color: #3b3a68;
 }
 
 .item1 {
+  grid-row-start: 1;
+  grid-row-end: 3;
   background: rgba(229, 64, 223, 0.5);
   box-shadow: 2px 3px 30px rgba(229, 64, 223, 0.45);
   border-radius: 8px;
@@ -286,15 +242,7 @@ import Sidebar from "../components/Sidebar.vue";
   background: rgba(88, 235, 84, 0.5);
   box-shadow: 2px 3px 30px rgba(172, 245, 170, 0.45);
   border-radius: 8px;
-}
-.item5 {
-  background: #f9fd49;
-  box-shadow: 2px 3px 30px rgba(172, 245, 170, 0.45);
-  border-radius: 8px;
-}
-.item6 {
-  background: #f2994a;
-  box-shadow: 2px 3px 30px rgba(172, 245, 170, 0.45);
-  border-radius: 8px;
+  grid-row-start: 2;
+  grid-row-end: 4;
 }
 </style>

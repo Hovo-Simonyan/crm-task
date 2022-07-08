@@ -16,7 +16,6 @@ let backgroundColor = "";
 let borderColor = "";
 let title = "";
 
-console.log(props)
 
 switch (props.buttonType) {
   case "hot":

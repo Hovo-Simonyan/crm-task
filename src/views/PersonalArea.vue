@@ -19,7 +19,16 @@
             <th>Email</th>
             <th>Телефон</th>
             <th>Тип</th>
-            <th>Дата заявки</th>
+            <th>
+                <div class="hg">
+
+                    Дата заявки
+                    <img
+                      src="../assets/caret2.png"
+                      alt=""
+                    />
+                </div>
+              </th>
             <th></th>
           </tr>
           <tr>
@@ -134,6 +143,16 @@ td {
   border-top: none;
   border-right: none;
   border-left: none;
+}
+.hg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.hg img{
+   margin-left: 10px;
+   
 }
 
 @media only screen and (max-width: 1570px) {
