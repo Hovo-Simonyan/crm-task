@@ -1,7 +1,11 @@
 <template>
   <div class="sidebar">
     <div class="sidebar-logo">
-      <img src="../assets/logo-text-component.png" />
+        <router-link to="/">
+          <img src="../assets/logo-text-component.png" />
+        </router-link>
+
+      
     </div>
     <div class="sidebar-nav">
       <div class="sidebar-item">
@@ -32,7 +36,7 @@
         <div class="sidebar-mini-logo">
           <img src="../assets/sixth.png" />
         </div>
-        <a href="#"> Сотрудники </a>
+        <router-link to="/emp">Сотрудники</router-link>
       </div>
     </div>
     <div class="sidebar-footer">

@@ -58,7 +58,7 @@ import EmployyeCard from "@/components/EmployyeCard.vue";
 
 .main-content {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto auto;
   grid-template-rows: 300px 300px;
   gap: 10px 10px;
 }

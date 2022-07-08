@@ -224,7 +224,7 @@ import Header from '@/components/Header.vue';
 
 .bage-info {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 2fr 1.5fr;
   align-items: center;
   height: 80px;
 }

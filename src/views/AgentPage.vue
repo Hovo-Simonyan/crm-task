@@ -73,9 +73,12 @@ import Sidebar from "../components/Sidebar.vue";
 .content {
   background-color: #ebebeb;
   padding: 30px 45px 30px 45px;
+  display: flex;
+  align-items: center
 }
 
 .main-content {
+  width: 100%;
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: 80px 530px;
