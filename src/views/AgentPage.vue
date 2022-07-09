@@ -7,7 +7,7 @@
         <div class="header">
           <div class="header-name">Личный кабинет</div>
           <div class="header-settings">
-            <div class="add-agent">
+            <div class="add-agent" @click="showModal=true">
               <span>Добавить агента</span>
             </div>
             <img src="../assets/agent-settings.png" alt="" />
@@ -64,6 +64,7 @@
             <span>274</span>
           </div>
         </div>
+        <Modal v-show="showModal" @close-modal="showModal = false" />
       </div>
     </div>
   </div>
@@ -71,6 +72,11 @@
 
 <script setup>
 import Sidebar from "../components/Sidebar.vue";
+import Modal from '../components/Modal.vue'
+import { ref } from 'vue'
+
+
+let showModal = ref(false)
 </script>
 
 <style scoped>
